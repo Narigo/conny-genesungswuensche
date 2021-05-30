@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-d56acba8.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-3164172e.js">
+		<link rel="modulepreload" href="/./_app/layout.svelte-19ca36de.js">
+		<link rel="modulepreload" href="/./_app/pages/wishes.svelte-92f75ecc.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-d56acba8.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/layout.svelte-19ca36de.js"),
+						import("/./_app/pages/wishes.svelte-92f75ecc.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/wishes",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1>Genesungswünsche</h1>
+
+<section><article><h2>Jörn</h2>
+	<img src="https://dl.airtable.com/.attachments/5ee667ee09854e73fdf5349ff26f52d9/81dcafb0/webcam-5312021122042AM.png">
+	<div>Alles Gute! Bald wird wieder alles besser!</div>
+</article></section>
+
+<a href="/">Noch einen Eintrag?</a>
+
+
+
+	<script type="svelte-data" url="/wishes.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"wishes\":[{\"name\":\"Jörn\",\"image\":\"https:\u002F\u002Fdl.airtable.com\u002F.attachments\u002F5ee667ee09854e73fdf5349ff26f52d9\u002F81dcafb0\u002Fwebcam-5312021122042AM.png\",\"wishes\":\"Alles Gute! Bald wird wieder alles besser!\"}]}"}</script>
+</div>
+	</body>
+</html>

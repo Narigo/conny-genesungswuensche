@@ -22,22 +22,23 @@
 </script>
 
 <script lang="ts">
+	import { base } from '$app/paths';
 	export let wishes: Wish[];
-	console.log('got wishes', wishes);
 </script>
 
 <h1>Genesungswünsche</h1>
 
 <section>
-	{#each wishes as { name, image, wishes }}
+	{#each wishes as { createdAt, image, name, wishes }}
 		<article>
 			<h2>{name}</h2>
+			<span>{createdAt}</span>
 			{#if image}
-				<img src={image} />
+				<img src={image} alt={name} />
 			{/if}
 			<div>{wishes}</div>
 		</article>
 	{/each}
 </section>
 
-<a href="/">Noch einen Eintrag?</a>
+<a href={`${base}/..`}>Noch einen Eintrag?</a>

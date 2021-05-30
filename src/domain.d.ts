@@ -1,5 +1,6 @@
 type Wish = {
+	createdAt: string;
 	name: string;
-	image: string;
+	image?: string;
 	wishes: string;
 };

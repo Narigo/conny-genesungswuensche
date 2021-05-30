@@ -10,7 +10,7 @@ export async function retrieveAllWishes(): Promise<Wish[]> {
 		base('get_well_soon')
 			.select({
 				view: 'database',
-				fields: ['name', 'image', 'wishes'],
+				fields: ['created_at', 'image', 'name', 'wishes'],
 				filterByFormula: '{publish}'
 			})
 			.eachPage(
@@ -23,6 +23,7 @@ export async function retrieveAllWishes(): Promise<Wish[]> {
 									? record.get('image')[0].url
 									: null;
 							return {
+								createdAt: record.get('created_at') as string,
 								name: record.get('name') as string,
 								image,
 								wishes: record.get('wishes') as string

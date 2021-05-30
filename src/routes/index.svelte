@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <iframe
 	class="airtable-embed"
 	src="https://airtable.com/embed/shriRtNezy7rgXrjo?backgroundColor=green"
@@ -7,4 +11,4 @@
 	style="background: transparent; border: 1px solid #ccc;"
 	title="Airtable embed"
 />
-<a href="wishes">Zu den Genesungswünschen</a>
+<a href="{base}/wishes">Zu den Genesungswünschen</a>

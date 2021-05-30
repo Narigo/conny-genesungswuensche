@@ -22,6 +22,7 @@
 </script>
 
 <script lang="ts">
+	import { base } from '$app/paths';
 	export let wishes: Wish[];
 </script>
 
@@ -40,4 +41,4 @@
 	{/each}
 </section>
 
-<a href=".">Noch einen Eintrag?</a>
+<a href={base}>Noch einen Eintrag?</a>

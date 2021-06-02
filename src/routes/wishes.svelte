@@ -41,4 +41,4 @@
 	{/each}
 </section>
 
-<a href={base}>Noch einen Eintrag?</a>
+<a href="{base}/">Noch einen Eintrag?</a>

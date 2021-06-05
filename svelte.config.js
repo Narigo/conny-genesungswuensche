@@ -14,10 +14,6 @@ const config = {
 		adapter: adapterStatic(),
 
 		vite: {
-			define: {
-				'import.meta.env.AIRTABLE_API_TOKEN': process.env['AIRTABLE_API_TOKEN'],
-				'import.meta.env.AIRTABLE_BASE': process.env['AIRTABLE_BASE']
-			},
 			server: {
 				hmr: {
 					port: 3001

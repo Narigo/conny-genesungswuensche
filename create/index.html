@@ -12,10 +12,9 @@
 		<link rel="modulepreload" href="/./_app/chunks/vendor-97542207.js">
 		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-dbf19f34.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-53b8b509.js">
+		<link rel="modulepreload" href="/./_app/pages/create.svelte-be7113b2.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-e3bc8812.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-e4be8de5.css">
 
 		<script type="module">
 			import { start } from "/./_app/start-67877c29.js";
@@ -32,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-dbf19f34.js"),
-						import("/./_app/pages/index.svelte-53b8b509.js")
+						import("/./_app/pages/create.svelte-be7113b2.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/create",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -48,21 +47,13 @@
 		<div id="svelte">
 
 
-<div class="svelte-8cvvqk"><h1>Genesungswünsche</h1>
+<div class="svelte-8cvvqk"><h2>Neuen Eintrag erstellen</h2>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shriRtNezy7rgXrjo?backgroundColor=green" frameborder="0" width="100%" height="auto" style="background: transparent; border: 1px solid #ccc;" title="Airtable embed"></iframe>
+<a href="/">Zu den Genesungswünschen</a></div>
 
-<section><article class="svelte-kmam9d"><div>Jörn meinte am 6/5/2021, 4:38:12 PM mit Bedacht:</div>
+
+
 	
-	<div>juhu!</div>
-</article><article class="svelte-kmam9d"><div>Jörn sagte am 6/5/2021, 4:38:12 PM mit Bedacht:</div>
-	
-	<div>juhu2!</div>
-</article></section>
-
-<a href="/create">Noch einen Eintrag?</a></div>
-
-
-
-	<script type="svelte-data" url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"wishes\":[{\"id\":\"1\",\"createdAt\":\"6\u002F5\u002F2021, 4:38:12 PM\",\"name\":\"Jörn\",\"image\":null,\"wishes\":\"juhu!\"},{\"id\":\"2\",\"createdAt\":\"6\u002F5\u002F2021, 4:38:12 PM\",\"name\":\"Jörn\",\"image\":null,\"wishes\":\"juhu2!\"}]}"}</script>
 </div>
 	</body>
 </html>
